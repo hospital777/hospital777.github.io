@@ -1,0 +1,288 @@
+* {
+	font-family: "Courier New", Courier, monospace;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #0c2d48;
+}
+
+header {
+	background-color: #b1d4e0;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 50px;
+}
+.logo {
+	text-decoration: none;
+	color: #145da0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.logo:hover {
+	color: blue;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: #145da0;
+	font-weight: 600;
+	font-size: 1em;
+	padding: 10px 8px;
+}
+
+.navigation a:hover {
+	background-color: #2e8bc0;
+	color: #fff;
+}
+.cards {
+	width: 20%;
+	background-color: #145da0;
+	border-radius: 25px;
+	margin: 40px;
+	display: inline-block;
+}
+
+.main {
+	display: inline-block;
+}
+
+.cards:hover {
+	box-shadow: 2px 2px 10px black;
+}
+
+.image img {
+	width: 100%;
+	border-top-right-radius: 80px;
+	border-top-left-radius: 80px;
+}
+
+.title {
+	text-align: center;
+	padding: 5px;
+}
+
+.description {
+	text-align: center;
+	padding: 5px;
+}
+
+.checked {
+	color: #fd4;
+}
+
+.opa {
+	opacity: 0.3;
+}
+p {
+	font-size: 1.3em;
+	font-weight: 600;
+	padding-top: 30px;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: 700;
+	color: #b1d4e0;
+	text-align: center;
+	background-color: #0c2d48;
+	padding-top: 70px;
+	margin-right: 350px;
+	margin-left: 350px;
+}
+
+h2 {
+	font-size: 1.7em;
+	font-weight: 800;
+	color: #b1d4e0;
+	text-align: center;
+	padding: 0 0 20px 0;
+}
+
+.body {
+	display: grid;
+	height: 100%;
+	place-items: center;
+	text-align: center;
+	background-color: #000;
+}
+
+.container {
+	width: 100%;
+	/*background: #111;*/
+	padding: 20px 30px;
+	border: 1px solid #145da0;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.container .star-widget input {
+	display: none;
+}
+
+.container h2 {
+	font-size: 1.7em;
+	font-weight: 700;
+	color: #145da0;
+	text-align: center;
+	padding: 0 0 20px 0;
+}
+
+.container form {
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+
+form .form-comment {
+	position: relative;
+	border-bottom: 2px solid whitesmoke;
+	margin: 30px 0;
+}
+.form-comment input {
+	width: 100%;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 0.9em;
+	border: none;
+}
+
+.username {
+	color: #2e8bc0;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+input[type="text"] {
+	font-size: 1.4em;
+	font-weight: 600;
+	color: black;
+}
+
+input[type="submit"] {
+	width: 100%;
+	height: 50px;
+	border: 1px solid;
+	font-size: 1.5em;
+	font-weight: 700;
+	background-color: #2e8bc0;
+}
+
+.star-widget label {
+	font-size: 60px;
+	color: #444;
+	padding: 10px;
+	float: right;
+	transition: all 0.2s ease;
+}
+
+input:checked ~ label {
+	color: #fd4;
+}
+
+input#rate-5:checked ~ label {
+	columns: #fe7;
+	text-shadow: 0 0 20px #952;
+}
+
+.container {
+	max-width: 1570px;
+	background-color: #b1d4e0;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: #145da0;
+	padding: 70px 0;
+}
+
+.footer-col {
+	width: 33%;
+	padding: 0 15px;
+}
+
+.footer-col h3 {
+	font-size: 1.5em;
+	color: #2e8bc0;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 700;
+	position: relative;
+	margin-left: 20px;
+}
+
+.footer-col ul a {
+	color: #0c2d48;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;
+	margin-left: 50px;
+}
+.footer-col ul a:hover {
+	color: blue;
+}
+
+.footer-col .Social-links a {
+	height: 30px;
+	width: 200px;
+	margin: 0 20px 20px 0;
+	line-height: 20px;
+	text-align: center;
+	font-size: 2.4em;
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 10%;
+	background-color: white;
+}
+
+.footer-col .Social-links a:hover {
+	color: blue;
+}
+
+.footer-col .Social-links .youtube a:hover {
+	color: red;
+}
+
+.footer-col .Social-links .github a:hover {
+	color: black;
+}
+
+.footer-col .Social-links .insta a:hover {
+	color: #fb3958;
+}
+
+.footer-col .Social-links .twitter a:hover {
+	color: #00acee;
+}
+
+.in-footer {
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #0c2d48;
+	padding-bottom: 20px;
+}
+
+.pfooter {
+	font-size: 1.1em;
+	font-weight: 600;
+	color: #145da0;
+}
