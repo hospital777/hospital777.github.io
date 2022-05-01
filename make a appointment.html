@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>make a appointment</title>
+    <link rel="stylesheet" href="CSS/make a appointment.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!--start-header-->
+
+    <header>
+
+        <a href="index.html" class="logo">Helwan University Hospital</a>
+        <nav class="navigation">
+
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Doctors</a>
+            <a href="#">Departments</a>
+            <a href="page_Review.html" target="_blank">Review</a>
+            <a href="make a appointment.html" target="_blank">Make an appointment</a>
+            <a href="#">Appointment Schedule</a>
+
+        </nav>
+    </header>
+
+
+
+    <form method="get">
+
+        <h1 class="">Book Now</h1>
+        <div class="container-2">
+            <form method="post">
+                <label for="fname">First Name</label>
+                <input required id="fname" type="text" placeholder="your first name ">
+
+                <label>Last Name</label>
+                <input required id="lname" type="text" placeholder="your last name">
+
+
+
+                <div>
+                    <label for="spacia">Specialization</label>
+                    <select id="spacia">
+                        <option value="1"> Ophthalmology</option>
+                        <option value="2">Internal medicine</option>
+                        <option value="3">Gynecological diseases</option>
+                        <option value="4">Surgery</option>
+                        <option value="5">Skin desies</option>
+                        <option value="6">Ear,nose and throat</option>
+                        <option value="7">Neurologists</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="doctors">choose doctor</label>
+                    <select id="doctors">
+                        <option value="01">Abdelwahed Ragab</option>
+                        <option value="02">Abdullah Khaled</option>
+                        <option value="03">Essam Ali</option>
+                        <option value="04">Abdullah Ashraf</option>
+                        <option value="05">Abdulrahman Mohamed</option>
+                        <option value="06">Mazen Akramy</option>
+                        <option value="07">Shady sayed</option>
+                        <option value="08">Ahmed Reda</option>
+                        <option value="09">Abdulrahman Mustafa</option>
+                        <option value="10">Ahmed Mustafa</option>
+                    </select>
+                </div>
+
+                <label for="time">Time</label>
+                <input required id="time" type="text" placeholder=" time between 9 AM : 6 PM ">
+
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="like : gnrnjjfen@gmail.com">
+
+                <div>
+                    <label for="banks">Banks</label>
+                    <select id="banks">
+                        <option>Bank Masr</option>
+                        <option>Bank Al Ahly</option>
+                        <option>Housing & Development Bank</option>
+                        <option>Another</option>
+                    </select>
+                </div>
+
+                <label for="secret">Secret Number</label>
+                <input required id="secret" type="password" placeholder="enter visa number">
+
+
+                <button id="submit" type="submit" onclick="BOOK()">Book</button>
+
+                <textarea placeholder="Comment"></textarea>
+            </form>
+        </div>
+
+
+        <!--start-footer-->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <p class="in-footer">Helwan University Hospital</p>
+                        <p><span class="pfooter">Our first goal is to take care of the health and safety of
+                                patients, through the
+                                continuous development of all our
+                                services. We always strive to present ourselves as one of the most important
+                                institutions for medical
+                                fields in Egypt,
+                                and to use the latest technologies in the world</span>
+                            <br />
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <a href="index.html">Home</a>
+                            <br />
+                            <a href="#">About</a>
+                            <br />
+                            <a href="#">Services</a>
+                            <br />
+                            <a href="#">Doctors</a>
+                            <br />
+                            <a href="#">Departments</a>
+                            <br />
+                            <a href="page_Review.html" target="_blank">Review</a>
+                            <br />
+                            <a href="make a appointment.html" target="_blank">Make an appointment</a>
+                            <br />
+                            <a href="#">Appointment Schedule</a>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Follow Us</h3>
+                        <div class="Social-links">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <span class="insta"><a href="https://www.instagram.com" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></span>
+                            <span class="twitter"><a href="https://twitter.com" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></span>
+                            <span class="github"><a href="https://github.com" target="_blank"><i
+                                        class="fab fa-github"></i></a></span>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <span class="youtube"><a href="https://www.youtube.com" target="_blank"><i
+                                        class="fab fa-youtube"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--end-footer-->
+
+        </div>
+    </form>
+
+    <script>
+        function BOOK() {
+            var fname = document.getElementById("fname").value
+            var lname = document.getElementById("lname").value
+            var spacia = document.getElementById("spacia").value
+            var doctors = document.getElementById("doctors").value
+            var time = document.getElementById("time").value
+            var email = document.getElementById("email").value
+            var banks = document.getElementById("banks").value
+            var secret = document.getElementById("secret").value
+
+            if (fname == "" && lname == "" &&
+                email == "" && secret == "") {
+                alert("Book failed!");
+            }
+            else if (lname == "" &&
+                email == "" && secret == "") {
+                alert("Please enter last name");
+                alert("Please enter email");
+                alert("Please enter Secret Number");
+            }
+            else if (fname = "" &&
+                email == "" && secret == "") {
+                alert("please enter first name");
+                alert("Please enter email");
+                alert("Please enter Secret Number");
+
+            }
+
+            else if (email == "" && secret == "") {
+                alert("Please enter email");
+                alert("Please enter Secret Number");
+            }
+
+            else if (secret == "") {
+                alert("Please enter Secret Number");
+
+            }
+
+            else if (email == "") {
+                alert("Please enter email");
+
+            }
+
+            else if (fname == "" && lname == "") {
+                alert("please enter first name");
+                alert("Please enter last name");
+            }
+
+            else if (fname == "" && secret == "" &&
+                email == "") {
+                alert("please enter first name");
+                alert("Please enter Secret Number");
+                alert("Please enter email");
+            }
+            else {
+                alert("Booked Successfully!");
+                location.reload();
+            }
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>
