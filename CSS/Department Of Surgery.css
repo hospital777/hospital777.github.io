@@ -10,7 +10,7 @@ body {
 	background-color: #0c2d48;
 }
 
-/*start-header*/
+/* start-header*/
 header {
 	background-color: #b1d4e0;
 	width: 100%;
@@ -55,7 +55,6 @@ header {
 	margin-bottom: 15px;
 	padding: 65px;
 }
-
 /*end-header*/
 
 .heading {
@@ -74,27 +73,29 @@ header {
 	margin-right: 10px;
 	text-align: justify;
 }
+
 .content p {
 	font-size: 1.2em;
 	font-weight: 500;
-	color: #145da0;
+	color: #b1d4e0;
 	margin-left: 450px;
 }
 
 ul li {
 	font-size: 1.2em;
 	font-weight: 500;
-	color: #2e8bc0;
+	color: #b1d4e0;
 }
 
 .content h2 {
 	margin-left: 440px;
 	margin-top: 15px;
 }
+
 .content img {
 	float: left;
-	width: 440px;
-	height: 440px;
+	width: 360px;
+	height: 360px;
 }
 
 .content ul {
@@ -277,5 +278,4 @@ ul {
 	font-weight: 600;
 	color: #145da0;
 }
-
 /*end-footer*/
