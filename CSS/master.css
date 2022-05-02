@@ -164,6 +164,7 @@ p {
 	font-size: 2.2em;
 	text-align: center;
 }
+
 /*start-footer*/
 .container {
 	max-width: 1570px;
@@ -253,7 +254,7 @@ ul {
 }
 
 .pfooter {
-	font-size: 1.1em;
+	font-size: 18px;
 	font-weight: 600;
 	color: #145da0;
 }

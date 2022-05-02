@@ -82,7 +82,7 @@ header {
 .opa {
 	opacity: 0.3;
 }
-p {
+.description p {
 	font-size: 1.3em;
 	font-weight: 600;
 	padding-top: 30px;
@@ -282,7 +282,7 @@ ul {
 }
 
 .pfooter {
-	font-size: 1.1em;
+	font-size: 18px;
 	font-weight: 600;
 	color: #145da0;
 }
