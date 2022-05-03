@@ -45,16 +45,6 @@ header {
 	background-color: #2e8bc0;
 	color: #fff;
 }
-
-.title {
-	display: flex;
-	justify-content: center;
-	color: blue;
-	font-weight: 800;
-	font-size: 2em;
-	margin-bottom: 15px;
-	padding: 65px;
-}
 /*end-header*/
 
 .BHM {
@@ -99,6 +89,82 @@ BMF p {
 	text-align: center;
 	font-size: 1.1em;
 }
+
+/*start edit details*/
+.details {
+	margin-top: 120px;
+	float: left;
+	margin-right: 40px;
+	background-color: #fff;
+	padding: 30px;
+	border: 20px;
+}
+h2 {
+	text-align: center;
+	font-size: 3em;
+	margin-right: 0px;
+	margin-top: 15px;
+}
+
+.info-1 {
+	font-size: 40px;
+	color: #145da0;
+	padding-bottom: 15px;
+}
+.icons {
+	font-size: 1em;
+	margin-bottom: 20px;
+	margin-right: 2px;
+}
+
+.info-2 {
+	font-size: 40px;
+	color: #145da0;
+}
+
+.info-3 {
+	font-size: 40px;
+	color: #145da0;
+}
+
+/*end edit details*/
+
+/*start edit form*/
+.form {
+	margin-top: 40px;
+}
+
+input[type="text"] {
+	width: 605px;
+	height: 55px;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+.first-field {
+	float: left;
+	margin-right: 10px;
+}
+input[type="email"] {
+	width: 1220px;
+	height: 55px;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+#comment {
+	width: 1220px;
+	height: 200px;
+	font-size: 30px;
+}
+button {
+	padding: 15px;
+	display: flex;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #fff;
+	background-color: #145da0;
+	font-size: 25px;
+	margin-left: 399px;
+} /*end edit form*/
 
 /*start-footer*/
 .container_1 {
@@ -182,7 +248,7 @@ ul {
 }
 
 .in-footer {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: 600;
 	color: #0c2d48;
 	padding-bottom: 20px;
