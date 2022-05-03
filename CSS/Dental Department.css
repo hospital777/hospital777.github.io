@@ -1,0 +1,333 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #0c2d48;
+} /*color for background*/
+
+/* start-header*/
+header {
+	background-color: #b1d4e0;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 50px;
+}
+.logo {
+	text-decoration: none;
+	color: #145da0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.logo:hover {
+	color: blue;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: #145da0;
+	font-weight: 600;
+	font-size: 1em;
+	padding: 10px 8px;
+}
+
+.navigation a:hover {
+	background-color: #2e8bc0;
+	color: #fff;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	color: blue;
+	font-weight: 800;
+	font-size: 2em;
+	margin-bottom: 15px;
+	padding: 65px;
+}
+/*end-header*/
+
+.image-1 {
+	float: left;
+	margin-right: 20px;
+	margin-left: 30px;
+	margin-top: 100px;
+	width: 400px;
+	height: 500px;
+	border: 5px;
+	border-radius: 30px;
+} /*edit first photo in the page*/
+
+/*imge*/
+
+.article-1 {
+	line-height: 1.8;
+	color: #b1d4e0;
+	font-size: 20px;
+	text-indent: 50px;
+	padding-left: 450px;
+} /*edit on first paragraph*/
+
+.title {
+	color: #145da0;
+	text-align: center;
+	font-size: 50px;
+} /*edit first title in the page*/
+
+.image-2 {
+	float: right;
+	margin-left: 20px;
+	margin-right: 30px;
+	margin-top: 100px;
+	width: 300px;
+	height: 400px;
+	border: 5px;
+	border-radius: 30px;
+} /*edit seconde photo in the page*/
+
+.article-2 {
+	line-height: 1.8;
+	color: #b1d4e0;
+	font-size: 20px;
+	text-indent: 50px;
+	padding-right: 50px;
+	margin-top: 100px;
+} /*edit seconde paragraph*/
+
+.hed {
+	color: #145da0;
+	text-align: center;
+	font-size: 40px;
+} /*edit seconde title in the page*/
+
+.image-3 {
+	float: left;
+	margin-right: 20px;
+	margin-left: 30px;
+	margin-top: 100px;
+	width: 400px;
+	height: 550px;
+	border: 5px;
+	border-radius: 30px;
+} /*edit third image in the page*/
+
+.article-3 {
+	line-height: 1.8;
+	color: #b1d4e0;
+	font-size: 20px;
+	text-indent: 50px;
+	padding-right: 50px;
+	margin-top: 100px;
+} /*edit third paragraph*/
+
+.title-1 {
+	color: #145da0;
+	text-align: left;
+	font-size: 50px;
+	text-indent: 10px;
+} /*edit third title in the page*/
+
+.hed-1 {
+	color: #2e8bc0;
+	text-align: left;
+	font-size: 30px;
+	text-indent: 20px;
+} /*edit the clause that comes after third title in the page*/
+
+.article-4 {
+	line-height: 1.8;
+	color: #b1d4e0;
+	font-size: 20px;
+	text-indent: 50px;
+	padding-right: 50px;
+	margin-top: 100px;
+	margin-left: 450px;
+} /*edit article-4*/
+
+.hed-2 {
+	color: #2e8bc0;
+	text-align: left;
+	font-size: 30px;
+	text-indent: 20px;
+} /*edit title of the article-4*/
+
+.image-4 {
+	float: right;
+	margin-left: 20px;
+	margin-right: 30px;
+	margin-top: 100px;
+	width: 500px;
+	height: 400px;
+	border: 5px;
+	border-radius: 30px;
+} /*edit fourth image in the page*/
+
+.article-5 {
+	line-height: 1.8;
+	color: #b1d4e0;
+	font-size: 20px;
+	text-indent: 50px;
+	padding-left: 20px;
+	margin-top: 100px;
+	margin-right: 450px;
+} /*edit article-5*/
+
+.hed-3 {
+	color: #145da0;
+	text-align: center;
+	font-size: 30px;
+} /*edit the title of the article-5*/
+
+.image-5 {
+	float: left;
+	margin-right: 20px;
+	margin-left: 30px;
+	margin-top: 100px;
+	width: 500px;
+	height: 400px;
+	border: 5px;
+	border-radius: 30px;
+} /*edit fifth image in the page*/
+
+.article-6 {
+	line-height: 2;
+	color: #b1d4e0;
+	font-size: 20px;
+	margin-top: 100px;
+	margin-left: 25px;
+} /*edit article-6*/
+
+.title-2 {
+	color: #145da0;
+	text-align: left;
+	font-size: 50px;
+	text-indent: 10px;
+} /*edit the title of the article-6*/
+
+.hed-4 {
+	color: #2e8bc0;
+	text-align: left;
+	font-size: 30px;
+	text-indent: 20px;
+} /*edit clause that is comes after title of article-6*/
+
+.hed-5 {
+	color: #2e8bc0;
+	text-align: left;
+	font-size: 30px;
+	text-indent: 20px;
+} /*edit title of the article-6*/
+
+.list-1 {
+	list-style: outside;
+	padding-left: 620px;
+}
+.list-2 {
+	list-style: outside;
+	margin-left: 20px;
+}
+
+/*start-footer*/
+.container {
+	max-width: 1570px;
+	background-color: #b1d4e0;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-col ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: #145da0;
+	padding: 70px 0;
+}
+
+.footer-col {
+	width: 33%;
+	padding: 0 15px;
+}
+
+.footer-col h3 {
+	font-size: 1.5em;
+	color: #2e8bc0;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 700;
+	position: relative;
+	margin-left: 20px;
+}
+
+.footer-col ul a {
+	color: #0c2d48;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;
+	margin-left: 50px;
+}
+.footer-col ul a:hover {
+	color: blue;
+}
+
+.footer-col .Social-links a {
+	height: 30px;
+	width: 200px;
+	margin: 0 20px 20px 0;
+	line-height: 20px;
+	text-align: center;
+	font-size: 2.4em;
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 10%;
+	background-color: white;
+}
+
+.footer-col .Social-links a:hover {
+	color: blue;
+}
+
+.footer-col .Social-links .youtube a:hover {
+	color: red;
+}
+
+.footer-col .Social-links .github a:hover {
+	color: black;
+}
+
+.footer-col .Social-links .insta a:hover {
+	color: #fb3958;
+}
+
+.footer-col .Social-links .twitter a:hover {
+	color: #00acee;
+}
+
+.in-footer {
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #0c2d48;
+	padding-bottom: 20px;
+}
+
+.pfooter {
+	font-size: 22px;
+	font-weight: 600;
+	color: #145da0;
+}
+/*end-footer*/

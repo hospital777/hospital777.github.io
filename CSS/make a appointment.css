@@ -1,5 +1,5 @@
 * {
-	font-family: "Courier New", Courier, monospace;
+	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -264,14 +264,14 @@ ul {
 }
 
 .in-footer {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: 600;
 	color: #0c2d48;
 	padding-bottom: 20px;
 }
 
 .pfooter {
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 600;
 	color: #145da0;
 }

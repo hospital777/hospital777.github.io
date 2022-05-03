@@ -1,5 +1,5 @@
 * {
-	font-family: "Courier New", Courier, monospace;
+	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -80,16 +80,17 @@ p {
 	color: #b1d4e0;
 }
 
-ul li {
+.content ul li {
 	font-size: 1.2em;
 	font-weight: 500;
 	color: #b1d4e0;
+	list-style: outside;
 }
 
 .content img {
 	float: left;
-	width: 440px;
-	height: 440px;
+	width: 400px;
+	height: 400px;
 }
 
 .content ul {
@@ -107,6 +108,7 @@ ul li {
 	float: right;
 	border-collapse: collapse;
 	width: 55%;
+	height: 65%;
 	margin: 35px 75px 0 0;
 }
 
@@ -129,6 +131,7 @@ ul li {
 }
 
 .container .title2 {
+	padding-left: 75px;
 	text-align: center;
 	text-transform: uppercase;
 	margin-left: 15px;

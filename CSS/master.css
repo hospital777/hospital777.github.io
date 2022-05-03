@@ -1,5 +1,5 @@
 * {
-	font-family: "Courier New", Courier, monospace;
+	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -45,6 +45,7 @@ header {
 	background-color: #2e8bc0;
 	color: #fff;
 }
+/*end-header*/
 
 .title {
 	display: flex;
@@ -55,7 +56,6 @@ header {
 	margin-bottom: 15px;
 	padding: 65px;
 }
-/*end-header*/
 
 .content {
 	display: flex;
@@ -121,11 +121,20 @@ p {
 
 .checked {
 	color: #fd4;
+	font-size: 1.4em;
+	padding-top: 17px;
 }
 
 .opa {
 	opacity: 0.3;
+	font-size: 1.4em;
+	padding-top: 17px;
 }
+/*.description p {
+	font-size: 1.3em;
+	font-weight: 600;
+	padding-top: 1px;
+}*/
 
 .icons {
 	color: blue;
@@ -161,7 +170,7 @@ p {
 }
 
 .welcome {
-	font-size: 2.2em;
+	font-size: 1.8em;
 	text-align: center;
 }
 
@@ -247,14 +256,14 @@ ul {
 }
 
 .in-footer {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: 600;
 	color: #0c2d48;
 	padding-bottom: 20px;
 }
 
 .pfooter {
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 600;
 	color: #145da0;
 }

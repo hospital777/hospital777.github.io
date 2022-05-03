@@ -1,133 +1,169 @@
-
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: b;
 }
 
-
-.header {
-  padding: 10px;
-  text-align: left;
-  background: black;
-  color: white;
+/* start-header*/
+header {
+	background-color: #b1d4e0;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 50px;
+}
+.logo {
+	text-decoration: none;
+	color: #145da0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2em;
 }
 
-
-.header h1 {
-  font-size: 40px;
+.logo:hover {
+	color: blue;
 }
 
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
+.navigation a {
+	text-decoration: none;
+	color: #145da0;
+	font-weight: 600;
+	font-size: 1em;
+	padding: 10px 8px;
 }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.navigation a:hover {
+	background-color: #2e8bc0;
+	color: #fff;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
+/*end-header*/
+h1 {
+	margin-top: 100px;
 }
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
-
-
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color:#ddd;
-   color: black;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.row {  
-  display: -ms-flexbox; 
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
 
 .side {
-  -ms-flex: 30%; 
-  flex: 10%;
-  background-color: #545de0;
-  padding: 20px;
+	-ms-flex: 30%;
+	flex: 10%;
+	background-color: #b1d4e0;
+	padding: 20px;
 }
 
-
-.main {   
-  -ms-flex: 70%; 
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
+.main {
+	-ms-flex: 70%;
+	flex: 70%;
+	background-color: #2e8bc0;
+	padding: 20px;
 }
 
+ul li {
+	list-style: outside;
+}
 
+/*start-footer*/
+.container_1 {
+	max-width: 1570px;
+	background-color: #b1d4e0;
+	margin: auto;
+	padding-bottom: 10px;
+}
 
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
 
+ul {
+	list-style: none;
+}
 
 .footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
+	background-color: #145da0;
+	padding: 70px 0;
 }
 
-
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
+.footer-col {
+	width: 33%;
+	padding: 0 15px;
 }
 
-
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
+.footer-col h3 {
+	font-size: 1.5em;
+	color: #2e8bc0;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 700;
+	position: relative;
+	margin-left: 20px;
 }
+
+.footer-col ul a {
+	color: #0c2d48;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;
+	margin-left: 0px;
+}
+.footer-col ul a:hover {
+	color: blue;
+}
+
+.footer-col .Social-links a {
+	height: 30px;
+	width: 200px;
+	margin: 0 20px 20px 0;
+	line-height: 20px;
+	text-align: center;
+	font-size: 2.4em;
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 10%;
+	background-color: white;
+}
+
+.footer-col .Social-links a:hover {
+	color: blue;
+}
+
+.footer-col .Social-links .youtube a:hover {
+	color: red;
+}
+
+.footer-col .Social-links .github a:hover {
+	color: black;
+}
+
+.footer-col .Social-links .insta a:hover {
+	color: #fb3958;
+}
+
+.footer-col .Social-links .twitter a:hover {
+	color: #00acee;
+}
+
+.in-footer {
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #0c2d48;
+}
+
+.pfooter {
+	font-size: 22px;
+	font-weight: 600;
+	color: #145da0;
+}
+/*end-footer*/
