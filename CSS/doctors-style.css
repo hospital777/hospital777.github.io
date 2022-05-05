@@ -5,11 +5,9 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
-
 body {
 	background-color: #0c2d48;
 }
-
 /* start-header*/
 header {
 	background-color: #b1d4e0;
@@ -45,74 +43,68 @@ header {
 	background-color: #2e8bc0;
 	color: #fff;
 }
+/*end-header*/
 
-.title {
+.cards h2 {
+	padding-top: 110px;
+	margin-bottom: 10px;
+	color: #fff;
+	font-size: 1.9em;
+	text-align: center;
+}
+.doc-cards {
+	padding-top: 40px;
 	display: flex;
 	justify-content: center;
-	color: blue;
-	font-weight: 800;
-	font-size: 2em;
-	margin-bottom: 15px;
-	padding: 65px;
-}
-/*end-header*/
-.row {
-	padding-top: 70px;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
+	flex-direction: row;
 	flex-wrap: wrap;
 }
-
-.side {
-	-ms-flex: 30%;
-	flex: 10%;
+.card {
+	background-color: #0c2d48;
+	width: 440px;
+	/*margin-bottom: 25px;*/
+	box-shadow: 5px 5px 25px rgba(1 1 1 /15%);
+	border-radius: 10px;
+	padding: 25px;
+	margin: 15px;
+}
+.card:hover {
 	background-color: #b1d4e0;
-	padding: 20px;
+	transform: scale(1.1);
+	transition: 0.7s ease;
 }
-
-.side p {
-	color: #145da0;
+.pic {
+	margin-left: 90px;
+	width: 200px;
+	text-align: center;
+	/*height: 300px;*/
 }
-
-.main {
-	-ms-flex: 70%;
-	flex: 70%;
-	background-color: #2e8bc0;
-	padding: 20px;
+.info {
+	text-align: center;
 }
-
-@media screen and (max-width: 700px) {
-	.row {
-		flex-direction: column;
-	}
+.info h3 {
+	color: #fff;
+	font-size: 1.2em;
+	font-family: serif;
+	margin-bottom: 10px;
 }
-
-@media screen and (max-width: 400px) {
-	.navbar a {
-		float: none;
-		width: 100%;
-	}
+.info p {
+	color: rgba(240, 248, 255, 0.623);
 }
-
-p {
-	font-size: 1.1em;
-}
-
-h2 {
-	font-size: 1.5em;
-	font-weight: 700;
+img {
+	width: 100%;
+	display: flex;
 }
 
 /*start-footer*/
-.container_1 {
+.container {
 	max-width: 1570px;
 	background-color: #b1d4e0;
 	margin: auto;
 	padding-bottom: 10px;
 }
 
-.row_1 {
+.row {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -128,7 +120,7 @@ ul {
 
 .footer-col {
 	width: 33%;
-	padding: 15px 15px;
+	padding: 0 15px;
 }
 
 .footer-col h3 {
@@ -137,6 +129,7 @@ ul {
 	text-transform: capitalize;
 	margin-bottom: 30px;
 	font-weight: 700;
+	position: relative;
 	margin-left: 20px;
 }
 
@@ -185,16 +178,15 @@ ul {
 }
 
 .in-footer {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: 600;
 	color: #0c2d48;
 	padding-bottom: 20px;
 }
 
 .pfooter {
-	font-size: 1.1em;
+	font-size: 22px;
 	font-weight: 600;
 	color: #145da0;
 }
-
 /*end-footer*/
