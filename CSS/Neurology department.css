@@ -81,6 +81,10 @@ ul li {
 	list-style: outside;
 }
 
+ul {
+	padding-top: 15px;
+}
+
 /*start-footer*/
 .container2 {
 	max-width: 1570px;
