@@ -17,8 +17,8 @@ header {
 	z-index: 1000;
 	align-items: center;
 	justify-content: space-between;
-    background-color: #b1d4e0;
-    box-shadow: 0 4px 7px -1px rgba(0,0,0,0.2);
+	background-color: #b1d4e0;
+	box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -35,19 +35,19 @@ header {
 }
 
 .navbar a {
-    text-decoration: none;
-    display: flex;
-    color:#145da0;
-    text-align: center;
-    padding: 25px 10px;
-    font-size: 16px;
-    float: right;
+	text-decoration: none;
+	display: flex;
+	color: #145da0;
+	text-align: center;
+	padding: 25px 10px;
+	font-size: 16px;
+	float: right;
 	font-weight: bold;
 }
 
 .navbar a:hover {
-    background-color: #2e8bc0;
-    color: #fff;
+	background-color: #2e8bc0;
+	color: #fff;
 	font-weight: bold;
 }
 
@@ -65,7 +65,6 @@ header {
 	font-size: 1.8em;
 	text-align: center;
 }
-
 
 .title {
 	display: flex;
@@ -113,7 +112,7 @@ header {
 	width: 340px;
 	padding: 30px;
 	margin: 15px;
-	transition: 0.9s  ease;
+	transition: 0.9s ease;
 }
 
 .department:hover {
@@ -204,8 +203,6 @@ p {
 .contact .info p {
 	font-size: 1.1em;
 }
-
-
 
 /*start-footer*/
 .container {
@@ -303,3 +300,26 @@ ul {
 	color: #145da0;
 }
 /*end-footer*/
+
+/*start-Java*/
+.swal-overlay {
+	background-color: #0c2d48;
+}
+
+.swal-title {
+	font-size: 24px;
+	color: #0c2d48;
+	text-align: center;
+}
+
+.swal-text {
+	background-color: white;
+	padding: 17px;
+	border: 1px solid #0c2d48;
+	display: block;
+	margin: 22px;
+	text-align: center;
+	color: #00acee;
+}
+
+/*end-Java*/
