@@ -12,49 +12,46 @@ body {
 
 /* start-header*/
 header {
-	background-color: #b1d4e0;
-	width: 100%;
-	position: fixed;
-	z-index: 1000;
 	display: flex;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 50px;
+    background-color: #b1d4e0;
+    box-shadow: 0 4px 7px -1px rgba(0,0,0,0.2);
 }
+
 .logo {
 	text-decoration: none;
 	color: #145da0;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 32px;
+	margin-left: 5px;
 }
 
 .logo:hover {
-	color: blue;
+	color: #2e8bc0;
 }
 
-.navigation a {
-	text-decoration: none;
-	color: #145da0;
-	font-weight: 600;
-	font-size: 1em;
-	padding: 10px 8px;
+.navbar a {
+    text-decoration: none;
+    display: flex;
+    color:#145da0;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 16px;
+    float: right;
+	font-weight: bold;
 }
 
-.navigation a:hover {
-	background-color: #2e8bc0;
-	color: #fff;
+.navbar a:hover {
+    background-color: #2e8bc0;
+    color: #fff;
+	font-weight: bold;
 }
 
-.title {
-	display: flex;
-	justify-content: center;
-	color: blue;
-	font-weight: 800;
-	font-size: 2em;
-	margin-bottom: 15px;
-	padding: 65px;
-}
 /*end-header*/
 
 .image-1 {
@@ -76,12 +73,14 @@ header {
 	font-size: 20px;
 	text-indent: 50px;
 	padding-left: 450px;
+	padding-top: 60px;
 } /*edit on first paragraph*/
 
 .title {
 	color: #145da0;
 	text-align: center;
 	font-size: 50px;
+	
 } /*edit first title in the page*/
 
 .image-2 {
@@ -235,10 +234,11 @@ header {
 .list-2 {
 	list-style: outside;
 	margin-left: 20px;
+	margin-top: 5px;
 }
 
 /*start-footer*/
-.container {
+.container2 {
 	max-width: 1570px;
 	background-color: #b1d4e0;
 	margin: auto;
@@ -250,13 +250,15 @@ header {
 	flex-wrap: wrap;
 }
 
-.footer-col ul {
+ul {
 	list-style: none;
+	margin-top: -30px;
+	margin-left: -25px;
 }
 
 .footer {
 	background-color: #145da0;
-	padding: 70px 0;
+	padding: 20px 20px;
 }
 
 .footer-col {
@@ -283,7 +285,7 @@ header {
 	margin-left: 50px;
 }
 .footer-col ul a:hover {
-	color: blue;
+	color: #2e8bc0;
 }
 
 .footer-col .Social-links a {

@@ -12,55 +12,60 @@ body {
 
 /* start-header*/
 header {
-	background-color: #b1d4e0;
-	width: 100%;
-	position: fixed;
-	z-index: 1000;
 	display: flex;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 50px;
+    background-color: #b1d4e0;
+    box-shadow: 0 4px 7px -1px rgba(0,0,0,0.2);
 }
+
 .logo {
 	text-decoration: none;
 	color: #145da0;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 32px;
+	margin-left: 5px;
 }
 
 .logo:hover {
-	color: blue;
+	color: #2e8bc0;
 }
 
-.navigation a {
-	text-decoration: none;
-	color: #145da0;
-	font-weight: 600;
-	font-size: 1em;
-	padding: 10px 8px;
+.navbar a {
+    text-decoration: none;
+    display: flex;
+    color:#145da0;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 16px;
+    float: right;
+	font-weight: bold;
 }
 
-.navigation a:hover {
-	background-color: #2e8bc0;
-	color: #fff;
+.navbar a:hover {
+    background-color: #2e8bc0;
+    color: #fff;
+	font-weight: bold;
 }
 /*end-header*/
+
 .heading {
 	color: #fff;
 	padding-top: 76px;
 	margin-left: 450px;
-	border-left: 6px #2e8bc0 solid;
 	text-transform: uppercase;
 }
 table {
-	width: 1600px;
+	width: 1435px;
 	height: 650px;
 }
 .content-table {
 	/*border-collapse: collapse;*/
-	margin: 25px 0;
-	margin-left: 50px;
+	margin: 25px 10px;
 	font-size: 1.1em;
 	min-width: 400px;
 	border-radius: 5px 5px 0 0;
@@ -93,8 +98,9 @@ table {
 .content-table tbody tr:last-of-type {
 	border-bottom: 3px solid #145da0;
 }
+
 /*start-footer*/
-.container_1 {
+.container2 {
 	max-width: 1570px;
 	background-color: #b1d4e0;
 	margin: auto;
@@ -108,11 +114,13 @@ table {
 
 ul {
 	list-style: none;
+	margin-top: -30px;
+	margin-left: -25px;
 }
 
 .footer {
 	background-color: #145da0;
-	padding: 70px 0;
+	padding: 20px 20px;
 }
 
 .footer-col {
@@ -139,7 +147,7 @@ ul {
 	margin-left: 50px;
 }
 .footer-col ul a:hover {
-	color: blue;
+	color: #2e8bc0;
 }
 
 .footer-col .Social-links a {
@@ -186,5 +194,4 @@ ul {
 	font-weight: 600;
 	color: #145da0;
 }
-
 /*end-footer*/
