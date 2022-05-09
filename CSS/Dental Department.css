@@ -230,6 +230,7 @@ header {
 .list-1 {
 	list-style: outside;
 	padding-left: 620px;
+	margin-top: 5px;
 }
 .list-2 {
 	list-style: outside;
