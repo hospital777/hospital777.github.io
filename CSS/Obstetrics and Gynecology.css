@@ -1,30 +1,54 @@
 * {
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
-
+/*dark-theme*/
+:root {
+	--primary-color: #0c2d48;
+	--secondary-color: #b1d4e0;
+	--font-type: Arial, Helvetica, sans-serif;
+	--type-color1: #145da0;
+	--type-color2: #2e8bc0;
+	--color3: #0c2d48;
+	--heading-color: #87ceeb;
+}
+.dark-theme {
+	--primary-color: #000106;
+	--secondary-color: #212121;
+	--font-type: "Times New Roman", Times, serif;
+	--type-color1: #fee2c5;
+	--type-color2: #6e1116e5;
+	--color3: #6e1116e5;
+	--heading-color: #001d6e;
+}
+/*end-dark-theme*/
 body {
-	background-color: #0c2d48;
+	background: var(--primary-color);
 }
 
-/*start-header*/
+/* start-header*/
+#icon {
+	width: 30px;
+	cursor: pointer;
+	margin: 17px;
+}
 header {
+	font-family: var(--font-type);
 	display: flex;
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
 	align-items: center;
 	justify-content: space-between;
-    background-color: #b1d4e0;
-    box-shadow: 0 4px 7px -1px rgba(0,0,0,0.2);
+	background-color: var(--secondary-color);
+	box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
 	text-decoration: none;
-	color: #145da0;
+	color: var(--type-color1);
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 32px;
@@ -32,47 +56,51 @@ header {
 }
 
 .logo:hover {
-	color: #2e8bc0;
+	color: var(--type-color2);
 }
 
 .navbar a {
-    text-decoration: none;
-    display: flex;
-    color:#145da0;
-    text-align: center;
-    padding: 25px 10px;
-    font-size: 16px;
-    float: right;
+	text-decoration: none;
+	display: flex;
+	color: var(--type-color1);
+	text-align: center;
+	padding: 25px 10px;
+	font-size: 16px;
+	float: right;
 	font-weight: bold;
 }
 
 .navbar a:hover {
-    background-color: #2e8bc0;
-    color: #fff;
+	background-color: var(--type-color2);
+	color: #fff;
 	font-weight: bold;
 }
 
 /*end-header*/
 
 h1 {
+	font-family: var(--font-type);
 	padding-top: 100px;
 	text-align: center;
 	color: aliceblue;
 }
 
 .right {
+	font-family: var(--font-type);
 	text-align: center;
 	margin: 50px;
-	color: #b1d4e0;
+	color: var(--type-color2);
 }
 
 .center {
+	font-family: var(--font-type);
 	text-align: center;
-	color: aliceblue;
+	color: var(--heading-color);
 }
 #are {
+	font-family: var(--font-type);
 	text-align: center;
-	color: #87ceeb;
+	color: var(--type-color1);
 	margin-top: 30px;
 	margin-bottom: 60px;
 }
@@ -99,7 +127,7 @@ table.cc {
 	/* flex-wrap: wrap;*/
 }
 .card {
-	background-color: #0c2d48;
+	background-color: var(--color3);
 	width: 440px;
 	box-shadow: 5px 5px 25px rgba(1 1 1 /15%);
 	margin: 15px;
@@ -108,8 +136,7 @@ table.cc {
 }
 
 .card:hover {
-	background-color: #37719f;
-
+	background-color: var(--secondary-color);
 	transform: scale(1.1);
 	transition: 0.7s ease;
 }
@@ -124,13 +151,14 @@ table.cc {
 	text-align: center;
 }
 .serv-info h3 {
-	color: #fff;
+	color: var(--type-color1);
 	font-size: 1.2em;
-	font-family: serif;
+	font-family: var(--font-type);
 	margin-bottom: 10px;
 }
 .serv-info p {
-	color: rgba(240, 248, 255, 0.539);
+	font-family: var(--font-type);
+	color: var(--type-color1);
 }
 .doc-pic img {
 	width: 300px;
@@ -144,19 +172,21 @@ table.cc {
 	text-align: center;
 }
 .doc-info h3 {
-	color: #fff;
+	font-family: var(--font-type);
+	color: var(--type-color1);
 	font-size: 1.2em;
-	font-family: serif;
 	margin-bottom: 10px;
 }
 .doc-info p {
-	color: rgba(240, 248, 255, 0.539);
+	font-family: var(--font-type);
+	color: var(--type-color1);
 }
 
 /*start-footer*/
 .container2 {
+	font-family: var(--font-type);
 	max-width: 1570px;
-	background-color: #b1d4e0;
+	background-color: var(--secondary-color);
 	margin: auto;
 	padding-bottom: 10px;
 }
@@ -173,7 +203,7 @@ ul {
 }
 
 .footer {
-	background-color: #145da0;
+	background-color: var(--type-color1);
 	padding: 20px 20px;
 }
 
@@ -184,7 +214,7 @@ ul {
 
 .footer-col h3 {
 	font-size: 1.5em;
-	color: #2e8bc0;
+	color: var(--type-color2);
 	text-transform: capitalize;
 	margin-bottom: 30px;
 	font-weight: 700;
@@ -193,7 +223,7 @@ ul {
 }
 
 .footer-col ul a {
-	color: #0c2d48;
+	color: var(--primary-color);
 	font-size: 1.2em;
 	font-weight: 700;
 	text-decoration: none;
@@ -201,7 +231,7 @@ ul {
 	margin-left: 50px;
 }
 .footer-col ul a:hover {
-	color: #2e8bc0;
+	color: var(--type-color2);
 }
 
 .footer-col .Social-links a {
@@ -239,13 +269,13 @@ ul {
 .in-footer {
 	font-size: 1.4em;
 	font-weight: 600;
-	color: #0c2d48;
+	color: var(--primary-color);
 	padding-bottom: 20px;
 }
 
 .pfooter {
 	font-size: 22px;
 	font-weight: 600;
-	color: #145da0;
+	color: var(--type-color1);
 }
 /*end-footer*/

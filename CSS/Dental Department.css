@@ -1,30 +1,54 @@
 * {
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
 
+:root {
+	--primary-color: #0c2d48;
+	--secondary-color: #b1d4e0;
+	--font-type: Arial, Helvetica, sans-serif;
+	--type-color1: #145da0;
+	--type-color2: #2e8bc0;
+	--type-color3: #b1d4e0;
+	--heading-color: #87ceeb;
+}
+.dark-theme {
+	--primary-color: #000106;
+	--secondary-color: #212121;
+	--font-type: "Times New Roman", Times, serif;
+	--type-color1: #fee2c5;
+	--type-color2: #6e1116e5;
+	--type-color3: white;
+	--heading-color: #001d6e;
+}
 body {
-	background-color: #0c2d48;
-} /*color for background*/
+	background: var(--primary-color);
+}
+/*color for background*/
 
 /* start-header*/
+#icon {
+	width: 30px;
+	cursor: pointer;
+	margin: 17px;
+}
 header {
+	font-family: var(--font-type);
 	display: flex;
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
 	align-items: center;
 	justify-content: space-between;
-    background-color: #b1d4e0;
-    box-shadow: 0 4px 7px -1px rgba(0,0,0,0.2);
+	background-color: var(--secondary-color);
+	box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
 	text-decoration: none;
-	color: #145da0;
+	color: var(--type-color1);
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 32px;
@@ -32,23 +56,23 @@ header {
 }
 
 .logo:hover {
-	color: #2e8bc0;
+	color: var(--type-color2);
 }
 
 .navbar a {
-    text-decoration: none;
-    display: flex;
-    color:#145da0;
-    text-align: center;
-    padding: 25px 10px;
-    font-size: 16px;
-    float: right;
+	text-decoration: none;
+	display: flex;
+	color: var(--type-color1);
+	text-align: center;
+	padding: 25px 10px;
+	font-size: 16px;
+	float: right;
 	font-weight: bold;
 }
 
 .navbar a:hover {
-    background-color: #2e8bc0;
-    color: #fff;
+	background-color: var(--type-color2);
+	color: #fff;
 	font-weight: bold;
 }
 
@@ -68,8 +92,9 @@ header {
 /*imge*/
 
 .article-1 {
+	font-family: var(--font-type);
 	line-height: 1.8;
-	color: #b1d4e0;
+	color: var(--type-color3);
 	font-size: 20px;
 	text-indent: 50px;
 	padding-left: 450px;
@@ -77,10 +102,10 @@ header {
 } /*edit on first paragraph*/
 
 .title {
-	color: #145da0;
+	font-family: var(--font-type);
+	color: var(--heading-color);
 	text-align: center;
 	font-size: 50px;
-	
 } /*edit first title in the page*/
 
 .image-2 {
@@ -95,8 +120,9 @@ header {
 } /*edit seconde photo in the page*/
 
 .article-2 {
+	font-family: var(--font-type);
 	line-height: 1.8;
-	color: #b1d4e0;
+	color: var(--type-color3);
 	font-size: 20px;
 	text-indent: 50px;
 	padding-right: 50px;
@@ -104,7 +130,8 @@ header {
 } /*edit seconde paragraph*/
 
 .hed {
-	color: #145da0;
+	font-family: var(--font-type);
+	color: var(--heading-color);
 	text-align: center;
 	font-size: 40px;
 } /*edit seconde title in the page*/
@@ -121,8 +148,9 @@ header {
 } /*edit third image in the page*/
 
 .article-3 {
+	font-family: var(--font-type);
 	line-height: 1.8;
-	color: #b1d4e0;
+	color: var(--type-color3);
 	font-size: 20px;
 	text-indent: 50px;
 	padding-right: 50px;
@@ -130,22 +158,25 @@ header {
 } /*edit third paragraph*/
 
 .title-1 {
-	color: #145da0;
+	font-family: var(--font-type);
+	color: var(--heading-color);
 	text-align: left;
 	font-size: 50px;
 	text-indent: 10px;
 } /*edit third title in the page*/
 
 .hed-1 {
-	color: #2e8bc0;
+	font-family: var(--font-type);
+	color: var(--type-color2);
 	text-align: left;
 	font-size: 30px;
 	text-indent: 20px;
 } /*edit the clause that comes after third title in the page*/
 
 .article-4 {
+	font-family: var(--font-type);
 	line-height: 1.8;
-	color: #b1d4e0;
+	color: var(--type-color3);
 	font-size: 20px;
 	text-indent: 50px;
 	padding-right: 50px;
@@ -154,7 +185,8 @@ header {
 } /*edit article-4*/
 
 .hed-2 {
-	color: #2e8bc0;
+	font-family: var(--font-type);
+	color: var(--type-color2);
 	text-align: left;
 	font-size: 30px;
 	text-indent: 20px;
@@ -172,8 +204,9 @@ header {
 } /*edit fourth image in the page*/
 
 .article-5 {
+	font-family: var(--font-type);
 	line-height: 1.8;
-	color: #b1d4e0;
+	color: var(--type-color3);
 	font-size: 20px;
 	text-indent: 50px;
 	padding-left: 20px;
@@ -182,7 +215,8 @@ header {
 } /*edit article-5*/
 
 .hed-3 {
-	color: #145da0;
+	font-family: var(--font-type);
+	color: var(--heading-color);
 	text-align: center;
 	font-size: 30px;
 } /*edit the title of the article-5*/
@@ -199,40 +233,46 @@ header {
 } /*edit fifth image in the page*/
 
 .article-6 {
+	font-family: var(--font-type);
 	line-height: 2;
-	color: #b1d4e0;
+	color: var(--type-color3);
 	font-size: 20px;
 	margin-top: 100px;
 	margin-left: 25px;
 } /*edit article-6*/
 
 .title-2 {
-	color: #145da0;
+	font-family: var(--font-type);
+	color: var(--heading-color);
 	text-align: left;
 	font-size: 50px;
 	text-indent: 10px;
 } /*edit the title of the article-6*/
 
 .hed-4 {
-	color: #2e8bc0;
+	font-family: var(--font-type);
+	color: var(--type-color2);
 	text-align: left;
 	font-size: 30px;
 	text-indent: 20px;
 } /*edit clause that is comes after title of article-6*/
 
 .hed-5 {
-	color: #2e8bc0;
+	font-family: var(--font-type);
+	color: var(--type-color2);
 	text-align: left;
 	font-size: 30px;
 	text-indent: 20px;
 } /*edit title of the article-6*/
 
 .list-1 {
+	font-family: var(--font-type);
 	list-style: outside;
 	padding-left: 620px;
 	margin-top: 5px;
 }
 .list-2 {
+	font-family: var(--font-type);
 	list-style: outside;
 	margin-left: 20px;
 	margin-top: 5px;
@@ -240,8 +280,9 @@ header {
 
 /*start-footer*/
 .container2 {
+	font-family: var(--font-type);
 	max-width: 1570px;
-	background-color: #b1d4e0;
+	background-color: var(--secondary-color);
 	margin: auto;
 	padding-bottom: 10px;
 }
@@ -258,7 +299,7 @@ ul {
 }
 
 .footer {
-	background-color: #145da0;
+	background-color: var(--type-color1);
 	padding: 20px 20px;
 }
 
@@ -269,7 +310,7 @@ ul {
 
 .footer-col h3 {
 	font-size: 1.5em;
-	color: #2e8bc0;
+	color: var(--type-color2);
 	text-transform: capitalize;
 	margin-bottom: 30px;
 	font-weight: 700;
@@ -278,7 +319,7 @@ ul {
 }
 
 .footer-col ul a {
-	color: #0c2d48;
+	color: var(--primary-color);
 	font-size: 1.2em;
 	font-weight: 700;
 	text-decoration: none;
@@ -286,7 +327,7 @@ ul {
 	margin-left: 50px;
 }
 .footer-col ul a:hover {
-	color: #2e8bc0;
+	color: var(--type-color2);
 }
 
 .footer-col .Social-links a {
@@ -324,13 +365,13 @@ ul {
 .in-footer {
 	font-size: 1.4em;
 	font-weight: 600;
-	color: #0c2d48;
+	color: var(--primary-color);
 	padding-bottom: 20px;
 }
 
 .pfooter {
 	font-size: 22px;
 	font-weight: 600;
-	color: #145da0;
+	color: var(--type-color1);
 }
 /*end-footer*/

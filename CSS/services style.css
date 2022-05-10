@@ -1,33 +1,62 @@
 /* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');*/
 
 * {
+	padding: 0;
+	margin: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
+/*dark-theme*/
+:root {
+	--primary-color: #0c2d48;
+	--secondary-color: #b1d4e0;
+	--font-type: Arial, Helvetica, sans-serif;
+	--type-color1: #145da0;
+	--type-color2: #2e8bc0;
+	--heading-color: black;
+}
+.dark-theme {
+	--primary-color: #000106;
+	--secondary-color: #212121;
+	--font-type: "Times New Roman", Times, serif;
+	--type-color1: #fee2c5;
+	--type-color2: #6e1116e5;
+	--heading-color: white;
+}
+/*end-dark-theme*/
 body {
-	/*  font-family: "Montserrat";*/
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
 	/*background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);*/
-	background-color: #0c2d84;
+	background-color: var(--primary-color);
 }
-
+#icon {
+	width: 30px;
+	cursor: pointer;
+	margin: 17px;
+}
+/* start-header*/
+#icon {
+	width: 30px;
+	cursor: pointer;
+	margin: 17px;
+}
 header {
+	font-family: var(--font-type);
 	display: flex;
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
 	align-items: center;
 	justify-content: space-between;
-    background-color: #b1d4e0;
-    box-shadow: 0 4px 7px -1px rgba(0,0,0,0.2);
+	background-color: var(--secondary-color);
+	box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
 	text-decoration: none;
-	color: #145da0;
+	color: var(--type-color1);
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 32px;
@@ -35,28 +64,29 @@ header {
 }
 
 .logo:hover {
-	color: #2e8bc0;
+	color: var(--type-color2);
 }
 
 .navbar a {
-    text-decoration: none;
-    display: flex;
-    color:#145da0;
-    text-align: center;
-    padding: 25px 10px;
-    font-size: 16px;
-    float: right;
+	text-decoration: none;
+	display: flex;
+	color: var(--type-color1);
+	text-align: center;
+	padding: 25px 10px;
+	font-size: 16px;
+	float: right;
 	font-weight: bold;
 }
 
 .navbar a:hover {
-    background-color: #2e8bc0;
-    color: #fff;
+	background-color: var(--type-color2);
+	color: #fff;
 	font-weight: bold;
 }
-/*end-header*/
 
+/*end-header*/
 h2 {
+	font-family: var(--font-type);
 	color: rgb(0, 0, 0);
 	margin: 2rem 0 0.5rem;
 	font-size: 1.25rem;
@@ -64,7 +94,7 @@ h2 {
 	text-transform: uppercase;
 }
 
-img {
+.thumbnail img {
 	display: block;
 	border: 0;
 	width: 100%;
@@ -87,7 +117,7 @@ img {
 .card {
 	/*height: 200px;*/
 	/*background: red;*/
-	border: 2px solid #e7e7e7;
+	border: 2px solid var(--type-color2);
 	border-radius: 4px;
 	padding: 0.5rem;
 	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
@@ -109,8 +139,9 @@ img {
 }
 
 h2 {
-	color: #b1d4e0;
- }
+	color: var(--type-color1);
+	font-weight: 600;
+}
 .card-content {
 	font-size: 0.75rem;
 	display: flex;
@@ -140,6 +171,7 @@ h2 {
 }
 
 .category {
+	font-family: var(--font-type);
 	font-size: 0.75rem;
 	text-transform: uppercase;
 }
@@ -148,7 +180,7 @@ h2 {
 	position: absolute;
 	top: 110px;
 	left: 0;
-	color: #fff;
+	color: var(--heading-color);
 	background: #e74c3c;
 	padding: 10px 15px;
 	font-size: 14px;
@@ -184,11 +216,11 @@ h2 {
 	margin-left: 0.5rem;
 }
 
-
 /*start-footer*/
 .container2 {
+	font-family: var(--font-type);
 	max-width: 1570px;
-	background-color: #b1d4e0;
+	background-color: var(--secondary-color);
 	margin: auto;
 	padding-bottom: 10px;
 }
@@ -201,11 +233,11 @@ h2 {
 ul {
 	list-style: none;
 	margin-top: -30px;
-	margin-left: -65px;
+	margin-left: -25px;
 }
 
 .footer {
-	background-color: #145da0;
+	background-color: var(--type-color1);
 	padding: 20px 20px;
 }
 
@@ -216,7 +248,7 @@ ul {
 
 .footer-col h3 {
 	font-size: 1.5em;
-	color: #2e8bc0;
+	color: var(--type-color2);
 	text-transform: capitalize;
 	margin-bottom: 30px;
 	font-weight: 700;
@@ -225,7 +257,7 @@ ul {
 }
 
 .footer-col ul a {
-	color: #0c2d48;
+	color: var(--primary-color);
 	font-size: 1.2em;
 	font-weight: 700;
 	text-decoration: none;
@@ -233,7 +265,7 @@ ul {
 	margin-left: 50px;
 }
 .footer-col ul a:hover {
-	color: #2e8bc0;
+	color: var(--type-color2);
 }
 
 .footer-col .Social-links a {
@@ -271,13 +303,13 @@ ul {
 .in-footer {
 	font-size: 1.4em;
 	font-weight: 600;
-	color: #0c2d48;
+	color: var(--primary-color);
 	padding-bottom: 20px;
 }
 
 .pfooter {
 	font-size: 22px;
 	font-weight: 600;
-	color: #145da0;
+	color: var(--type-color1);
 }
 /*end-footer*/

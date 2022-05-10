@@ -1,30 +1,52 @@
 * {
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
-
+/*dark-theme*/
+:root {
+	--primary-color: #0c2d48;
+	--secondary-color: #b1d4e0;
+	--font-type: Arial, Helvetica, sans-serif;
+	--type-color1: #145da0;
+	--type-color2: #2e8bc0;
+	--heading-color: #87ceeb;
+}
+.dark-theme {
+	--primary-color: #000106;
+	--secondary-color: #212121;
+	--font-type: "Times New Roman", Times, serif;
+	--type-color1: #fee2c5;
+	--type-color2: #6e1116e5;
+	--heading-color: #001d6e;
+}
+/*end-dark-theme*/
 body {
-	background-color: #0c2d48;
+	background: var(--primary-color);
 }
 
 /* start-header*/
+#icon {
+	width: 30px;
+	cursor: pointer;
+	margin: 17px;
+}
 header {
+	font-family: var(--font-type);
 	display: flex;
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
 	align-items: center;
 	justify-content: space-between;
-    background-color: #b1d4e0;
-    box-shadow: 0 4px 7px -1px rgba(0,0,0,0.2);
+	background-color: var(--secondary-color);
+	box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
 	text-decoration: none;
-	color: #145da0;
+	color: var(--type-color1);
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 32px;
@@ -32,23 +54,23 @@ header {
 }
 
 .logo:hover {
-	color: #2e8bc0;
+	color: var(--type-color2);
 }
 
 .navbar a {
-    text-decoration: none;
-    display: flex;
-    color:#145da0;
-    text-align: center;
-    padding: 25px 10px;
-    font-size: 16px;
-    float: right;
+	text-decoration: none;
+	display: flex;
+	color: var(--type-color1);
+	text-align: center;
+	padding: 25px 10px;
+	font-size: 16px;
+	float: right;
 	font-weight: bold;
 }
 
 .navbar a:hover {
-    background-color: #2e8bc0;
-    color: #fff;
+	background-color: var(--type-color2);
+	color: #fff;
 	font-weight: bold;
 }
 
@@ -62,8 +84,8 @@ header {
 
 .container {
 	display: flex;
-	background-color: #145da0;
-	color: #b1d4e0;
+	background-color: var(--secondary-color);
+	color: var(--type-color2);
 }
 
 .container h1 {
@@ -74,14 +96,14 @@ header {
 }
 
 p {
-	color: black;
+	color: var(--type-color1);
 	font-size: 1.5em;
 	font-weight: 600;
 }
 
 .BMF {
 	display: flex;
-	background-color: #b1d4e0;
+	background-color: var(--secondary-color);
 	width: 100%;
 	height: 100px;
 }
@@ -111,13 +133,13 @@ p {
 h2 {
 	margin-left: 600px;
 	font-size: 3em;
-	color: #87ceeb;
+	color: var(--heading-color);
 	margin-top: 15px;
 }
 
 .info-1 {
 	font-size: 40px;
-	color: #145da0;
+	color: var(--type-color2);
 	padding-bottom: 15px;
 }
 .icons {
@@ -128,12 +150,12 @@ h2 {
 
 .info-2 {
 	font-size: 40px;
-	color: #145da0;
+	color: var(--type-color2);
 }
 
 .info-3 {
 	font-size: 40px;
-	color: #145da0;
+	color: var(--type-color2);
 }
 
 /*end edit details*/
@@ -170,15 +192,16 @@ button {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	color: #fff;
-	background-color: #145da0;
+	background-color: var(--type-color2);
 	font-size: 25px;
 	margin-left: 399px;
 } /*end edit form*/
 
 /*start-footer*/
 .container2 {
+	font-family: var(--font-type);
 	max-width: 1570px;
-	background-color: #b1d4e0;
+	background-color: var(--secondary-color);
 	margin: auto;
 	padding-bottom: 10px;
 }
@@ -195,7 +218,7 @@ ul {
 }
 
 .footer {
-	background-color: #145da0;
+	background-color: var(--type-color1);
 	padding: 20px 20px;
 }
 
@@ -206,7 +229,7 @@ ul {
 
 .footer-col h3 {
 	font-size: 1.5em;
-	color: #2e8bc0;
+	color: var(--type-color2);
 	text-transform: capitalize;
 	margin-bottom: 30px;
 	font-weight: 700;
@@ -215,7 +238,7 @@ ul {
 }
 
 .footer-col ul a {
-	color: #0c2d48;
+	color: var(--primary-color);
 	font-size: 1.2em;
 	font-weight: 700;
 	text-decoration: none;
@@ -223,7 +246,7 @@ ul {
 	margin-left: 50px;
 }
 .footer-col ul a:hover {
-	color: #2e8bc0;
+	color: var(--type-color2);
 }
 
 .footer-col .Social-links a {
@@ -261,13 +284,13 @@ ul {
 .in-footer {
 	font-size: 1.4em;
 	font-weight: 600;
-	color: #0c2d48;
+	color: var(--primary-color);
 	padding-bottom: 20px;
 }
 
 .pfooter {
 	font-size: 22px;
 	font-weight: 600;
-	color: #145da0;
+	color: var(--type-color1);
 }
 /*end-footer*/

@@ -1,29 +1,52 @@
 * {
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+/*dark-theme*/
+:root {
+	--primary-color: #0c2d48;
+	--secondary-color: #b1d4e0;
+	--font-type: Arial, Helvetica, sans-serif;
+	--type-color1: #145da0;
+	--type-color2: #2e8bc0;
+	--heading-color: #87ceeb;
+}
+.dark-theme {
+	--primary-color: #000106;
+	--secondary-color: #212121;
+	--font-type: "Times New Roman", Times, serif;
+	--type-color1: #fee2c5;
+	--type-color2: #6e1116e5;
+	--heading-color: #001d6e;
+}
+/*end-dark-theme*/
 body {
-	background-color: #0c2d48;
+	background: var(--primary-color);
 }
 
-/*start header*/
+/* start-header*/
+#icon {
+	width: 30px;
+	cursor: pointer;
+	margin: 17px;
+}
 header {
+	font-family: var(--font-type);
 	display: flex;
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #b1d4e0;
+	background-color: var(--secondary-color);
 	box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
 	text-decoration: none;
-	color: #145da0;
+	color: var(--type-color1);
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 32px;
@@ -31,13 +54,13 @@ header {
 }
 
 .logo:hover {
-	color: #2e8bc0;
+	color: var(--type-color2);
 }
 
 .navbar a {
 	text-decoration: none;
 	display: flex;
-	color: #145da0;
+	color: var(--type-color1);
 	text-align: center;
 	padding: 25px 10px;
 	font-size: 16px;
@@ -46,15 +69,16 @@ header {
 }
 
 .navbar a:hover {
-	background-color: #2e8bc0;
+	background-color: var(--type-color2);
 	color: #fff;
 	font-weight: bold;
 }
 
-/*end header*/
+/*end-header*/
 
 .word {
-	color: #87ceeb;
+	font-family: var(--font-type);
+	color: var(--type-color2);
 	font-size: 19px;
 	font-weight: 900;
 	padding-top: 90px;
@@ -67,9 +91,10 @@ header {
 }
 
 .title {
+	font-family: var(--font-type);
 	display: flex;
 	justify-content: center;
-	color: #b1d4e0;
+	color: var(--type-color1);
 	font-weight: 800;
 	font-size: 2em;
 	margin-bottom: 15px;
@@ -108,7 +133,7 @@ header {
 }
 
 .department {
-	background-color: #87ceeb;
+	background-color: var(--secondary-color);
 	width: 340px;
 	padding: 30px;
 	margin: 15px;
@@ -120,7 +145,7 @@ header {
 }
 
 .cards {
-	background-color: #b1d4e0;
+	background-color: var(--type-color2);
 	display: inline-block;
 	width: 300px;
 	margin-left: 10%;
@@ -130,7 +155,7 @@ header {
 }
 
 .cards:hover {
-	box-shadow: 2px 2px 10px black;
+	box-shadow: 2px 2px 10px var(--secondary-color);
 }
 .image img {
 	width: 100%;
@@ -139,6 +164,7 @@ header {
 }
 
 .title {
+	font-family: var(--font-type);
 	text-align: center;
 	padding: 2px;
 }
@@ -149,16 +175,18 @@ header {
 }
 
 p {
+	font-family: var(--font-type);
 	font-size: 1.3em;
 	font-weight: 600;
 	padding-top: 0px;
-	color: #0c2d48;
+	color: var(--type-color1);
 }
 
 .title h2 {
+	font-family: var(--font-type);
 	font-size: 1em;
 	font-weight: 600;
-	color: #145da0;
+	color: var(--heading-color);
 	text-align: center;
 }
 
@@ -180,12 +208,13 @@ p {
 }*/
 
 .icons {
-	color: #0c2d48;
+	color: var(--primary-color);
 	font-size: 7em;
 	text-align: center;
 }
 .info h3 {
-	color: #2e8bc0;
+	font-family: var(--font-type);
+	color: var(--type-color1);
 	font-size: 1.2em;
 	font-weight: 600;
 	margin: 10px;
@@ -193,7 +222,8 @@ p {
 }
 
 .info p {
-	color: #0c2d48;
+	font-family: var(--font-type);
+	color: var(--type-color2);
 	font-size: 0.9em;
 	font-weight: 600;
 	margin: 10px;
@@ -206,8 +236,9 @@ p {
 
 /*start-footer*/
 .container {
+	font-family: var(--font-type);
 	max-width: 1570px;
-	background-color: #b1d4e0;
+	background-color: var(--secondary-color);
 	margin: auto;
 	padding-bottom: 10px;
 }
@@ -224,7 +255,7 @@ ul {
 }
 
 .footer {
-	background-color: #145da0;
+	background-color: var(--type-color1);
 	padding: 20px 20px;
 }
 
@@ -235,7 +266,7 @@ ul {
 
 .footer-col h3 {
 	font-size: 1.5em;
-	color: #2e8bc0;
+	color: var(--type-color2);
 	text-transform: capitalize;
 	margin-bottom: 30px;
 	font-weight: 700;
@@ -244,7 +275,7 @@ ul {
 }
 
 .footer-col ul a {
-	color: #0c2d48;
+	color: var(--primary-color);
 	font-size: 1.2em;
 	font-weight: 700;
 	text-decoration: none;
@@ -252,7 +283,7 @@ ul {
 	margin-left: 50px;
 }
 .footer-col ul a:hover {
-	color: #2e8bc0;
+	color: var(--type-color2);
 }
 
 .footer-col .Social-links a {
@@ -290,14 +321,14 @@ ul {
 .in-footer {
 	font-size: 1.4em;
 	font-weight: 600;
-	color: #0c2d48;
+	color: var(--primary-color);
 	padding-bottom: 20px;
 }
 
 .pfooter {
 	font-size: 22px;
 	font-weight: 600;
-	color: #145da0;
+	color: var(--type-color1);
 }
 /*end-footer*/
 
