@@ -24,6 +24,7 @@
 
       <a href="index.html" class="logo">Helwan University Hospital</a>
       <div class="navbar">
+        <img src="images/moon.png" id="icon">
         <a href="Appointment Table.html" target="_blank">Appointment Schedule</a>
         <a href="make an appointment.html" target="_blank">Make an appointment</a>
         <a href="page_Review.html" target="_blank">Review</a>
@@ -141,7 +142,7 @@
             <div class="doc-pic"><img src="images/pic(4).jpeg" alt="doctor picture"></div>
 
             <div class="doc-info">
-               <h3 class="doc-name">eslam ahmed</h3>
+               <h3 class="doc-name">DR.Eslam Ahmed</h3>
 
                <p>Lecturer of Obstetrics and Gynecology - Helwan University </p>
             </div>
@@ -152,7 +153,7 @@
             <div class="doc-pic"><img src="images/pic(5).jpeg" alt="doctor picture"></div>
 
             <div class="doc-info">
-               <h3 class="doc-name">khaled moharam</h3>
+               <h3 class="doc-name">DR.Khaled Moharam</h3>
                <p> Surgery Consultant of Obstetrics and Gynecology -Helwan University</p>
             </div>
          </div>
@@ -162,7 +163,7 @@
             <div class="doc-pic"><img src="images/pic(6).jpeg" alt="doctor picture"></div>
 
             <div class="doc-info">
-               <h3 class="doc-name">Gouda mohamed </h3>
+               <h3 class="doc-name">DR.Gouda Mohamed </h3>
                <p>Assistant Professor of Obstetrics and Gynecology -Helwan University</p>
             </div>
          </div>
@@ -224,7 +225,19 @@
  </footer>
 
  <!--end-footer-->
-
+     <!--start button theme java-->
+     <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+          icon.src="images/sun.png";
+        }else{
+          icon.src="images/moon.png";
+        }
+      }
+    </script>
+    <!--end button theme java-->
 </body>
 
 </html>

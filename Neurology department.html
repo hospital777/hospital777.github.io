@@ -19,6 +19,7 @@
 
       <a href="index.html" class="logo">Helwan University Hospital</a>
       <div class="navbar">
+        <img src="images/moon.png" id="icon">
         <a href="Appointment Table.html" target="_blank">Appointment Schedule</a>
         <a href="make an appointment.html" target="_blank">Make an appointment</a>
         <a href="page_Review.html" target="_blank">Review</a>
@@ -285,6 +286,19 @@
   </footer>
 
   <!--end-footer-->
+       <!--start button theme java-->
+       <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+          document.body.classList.toggle("dark-theme");
+          if(document.body.classList.contains("dark-theme")){
+            icon.src="images/sun.png";
+          }else{
+            icon.src="images/moon.png";
+          }
+        }
+      </script>
+      <!--end button theme java-->
 </body>
 
 </html>

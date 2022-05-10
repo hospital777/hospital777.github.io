@@ -18,6 +18,7 @@
 
       <a href="index.html" class="logo">Helwan University Hospital</a>
       <div class="navbar">
+        <img src="images/moon.png" id="icon">
         <a href="Appointment Table.html" target="_blank">Appointment Schedule</a>
         <a href="make an appointment.html" target="_blank">Make an appointment</a>
         <a href="page_Review.html" target="_blank">Review</a>
@@ -105,7 +106,7 @@
             <div class="doc-pic"><img src="images/(4).jpeg" alt="doctor picture"></div>
 
             <div class="doc-info">
-               <h3 class="doc-name">mohamed salem</h3>
+               <h3 class="doc-name">DR.Mohamed Salem</h3>
 
                <p>Professor of Otolaryngology - Kasr Al-Ainy</p>
             </div>
@@ -116,7 +117,7 @@
             <div class="doc-pic"><img src="images/(5).jpeg" alt="doctor picture"></div>
 
             <div class="doc-info">
-               <h3 class="doc-name">radwa khaled</h3>
+               <h3 class="doc-name">DR.Radwa Khaled</h3>
                <p>Ear, Nose and Throat Surgery Consultant</p>
             </div>
          </div>
@@ -126,7 +127,7 @@
             <div class="doc-pic"><img src="images/(6).jpeg" alt="doctor picture"></div>
 
             <div class="doc-info">
-               <h3 class="doc-name">michel ibram</h3>
+               <h3 class="doc-name">DR.Michel Ibram</h3>
                <p>Professor of Otolaryngology,helwan University</p>
             </div>
          </div>
@@ -188,7 +189,19 @@
  </footer>
 
  <!--end-footer-->
-
+     <!--start button theme java-->
+     <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+          icon.src="images/sun.png";
+        }else{
+          icon.src="images/moon.png";
+        }
+      }
+    </script>
+    <!--end button theme java-->
 </body>
 
 </html>
